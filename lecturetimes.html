@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecture times by department for Winter 2026</title>
+<style>
+  body { font-family: Roboto, sans-serif; padding: 20px; }
+  #chart-container > div { display: none; margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<h1>Lecture times by department for Winter 2026</h1>
+
+<label for="department-select">Select Department:</label>
+<select id="department-select">
+  <option value="">--All Departments--</option>
+  <option value="MdiRU">Anthropology</option>
+  <option value="GXkXe">Art</option>
+  <option value="ORWAK">Art History</option>
+  <option value="TxSZC">Asian American Studies</option>
+  <option value="ufDvW">Astronomy</option>
+  <option value="HUmao">Biological Engineering</option>
+  <option value="Q0U6V">Biology (Creative Studies)</option>
+  <option value="CQCy0">Black Studies</option>
+  <option value="kEg73">Comparative Literature</option>
+  <option value="87Jlm">Chemical Engineering</option>
+  <option value="s3GJU">Chicano Studies</option>
+  <option value="7ZBNa">Chemistry and Biochemistry</option>
+  <option value="8XlrO">Chinese</option>
+  <option value="2esgA">Classics</option>
+  <option value="deTDW">Computer Science</option>
+  <option value="EleR0">Computing (Creative Studies)</option>
+  <option value="0qvL8">Counseling, Clinical, School Psychology</option>
+  <option value="swUTJ">Communication</option>
+  <option value="EmBKM">Dance</option>
+  <option value="xRvzF">East Asian Cultural Studies</option>
+  <option value="C04Dm">Earth Science</option>
+  <option value="wanYc">Electrical Computer Engineering</option>
+  <option value="TUXWv">Economics</option>
+  <option value="wIUgz">Education</option>
+  <option value="ledAf">Ecology, Evolution, & Marine Biology</option>
+  <option value="GsJqH">English</option>
+  <option value="f1Z2f">Engineering Sciences</option>
+  <option value="6O1AW">Environmental Studies</option>
+  <option value="MP4sz">Exercise Sport</option>
+  <option value="dNDlM">Exercise & Sport Studies</option>
+  <option value="AFXR4">Film and Media Studies</option>
+  <option value="68VXG">Feminist Studies</option>
+  <option value="jWpoD">French</option>
+  <option value="Pz191">Geography</option>
+  <option value="ylWlJ">German</option>
+  <option value="7ojrq">Global Studies</option>
+  <option value="3mEN0">Greek</option>
+  <option value="eVx2f">Hebrew</option>
+  <option value="qK2gN">History</option>
+  <option value="5x5YH">Interdisciplinary</option>
+  <option value="eDTxT">Italian</option>
+  <option value="lANRJ">Japanese</option>
+  <option value="UIbwM">Korean</option>
+  <option value="R6BYp">Latin American and Iberian Studies</option>
+  <option value="W9tKw">Latin</option>
+  <option value="mD3Vm">Linguistics</option>
+  <option value="vQS9I">Marine Science (Creative Studies)</option>
+  <option value="j68bN">Mathematics</option>
+  <option value="4W3VP">Materials</option>
+  <option value="ii2fI">Molecular, Cellular & Develop. Biology</option>
+  <option value="4OGtO">Mechanical Engineering</option>
+  <option value="EuplN">Military Science</option>
+  <option value="GrsVF">Music Performance Laboratories</option>
+  <option value="0sqIZ">Music</option>
+  <option value="QfaIW">Philosophy</option>
+  <option value="ShKAx">Physics</option>
+  <option value="kubKY">Political Science</option>
+  <option value="6Szpi">Portuguese</option>
+  <option value="92jka">Statistics & Applied Probability</option>
+  <option value="rvLS2">Psychology</option>
+  <option value="g6ysX">Religious Studies</option>
+  <option value="4WVjx">Russian</option>
+  <option value="oSZzt">Slavic</option>
+  <option value="c8J9b">Sociology</option>
+  <option value="VY0GE">Spanish</option>
+  <option value="OyBYl">Theater</option>
+  <option value="azj6G">Technology Management</option>
+  <option value="4vaVT">Writing & Literature (Creative Studies)</option>
+  <option value="NZFOo">Writing</option>
+</select>
+
+<div id="chart-container">
+  <!-- Default chart showing all departments -->
+  <div id="chart-GupBU" style="display:block;">
+    <script defer src="https://datawrapper.dwcdn.net/GupBU/embed.js"></script>
+  </div>
+
+  <!-- Individual department charts -->
+  <div id="chart-MdiRU"><script defer src="https://datawrapper.dwcdn.net/MdiRU/embed.js"></script></div>
+  <div id="chart-GXkXe"><script defer src="https://datawrapper.dwcdn.net/GXkXe/embed.js"></script></div>
+  <div id="chart-ORWAK"><script defer src="https://datawrapper.dwcdn.net/ORWAK/embed.js"></script></div>
+  <div id="chart-TxSZC"><script defer src="https://datawrapper.dwcdn.net/TxSZC/embed.js"></script></div>
+  <div id="chart-ufDvW"><script defer src="https://datawrapper.dwcdn.net/ufDvW/embed.js"></script></div>
+  <div id="chart-HUmao"><script defer src="https://datawrapper.dwcdn.net/HUmao/embed.js"></script></div>
+  <div id="chart-Q0U6V"><script defer src="https://datawrapper.dwcdn.net/Q0U6V/embed.js"></script></div>
+  <div id="chart-CQCy0"><script defer src="https://datawrapper.dwcdn.net/CQCy0/embed.js"></script></div>
+  <div id="chart-kEg73"><script defer src="https://datawrapper.dwcdn.net/kEg73/embed.js"></script></div>
+  <div id="chart-87Jlm"><script defer src="https://datawrapper.dwcdn.net/87Jlm/embed.js"></script></div>
+  <div id="chart-s3GJU"><script defer src="https://datawrapper.dwcdn.net/s3GJU/embed.js"></script></div>
+  <div id="chart-7ZBNa"><script defer src="https://datawrapper.dwcdn.net/7ZBNa/embed.js"></script></div>
+  <div id="chart-8XlrO"><script defer src="https://datawrapper.dwcdn.net/8XlrO/embed.js"></script></div>
+  <div id="chart-2esgA"><script defer src="https://datawrapper.dwcdn.net/2esgA/embed.js"></script></div>
+  <div id="chart-deTDW"><script defer src="https://datawrapper.dwcdn.net/deTDW/embed.js"></script></div>
+  <div id="chart-EleR0"><script defer src="https://datawrapper.dwcdn.net/EleR0/embed.js"></script></div>
+  <div id="chart-0qvL8"><script defer src="https://datawrapper.dwcdn.net/0qvL8/embed.js"></script></div>
+  <div id="chart-swUTJ"><script defer src="https://datawrapper.dwcdn.net/swUTJ/embed.js"></script></div>
+  <div id="chart-EmBKM"><script defer src="https://datawrapper.dwcdn.net/EmBKM/embed.js"></script></div>
+  <div id="chart-xRvzF"><script defer src="https://datawrapper.dwcdn.net/xRvzF/embed.js"></script></div>
+  <div id="chart-C04Dm"><script defer src="https://datawrapper.dwcdn.net/C04Dm/embed.js"></script></div>
+  <div id="chart-wanYc"><script defer src="https://datawrapper.dwcdn.net/wanYc/embed.js"></script></div>
+  <div id="chart-TUXWv"><script defer src="https://datawrapper.dwcdn.net/TUXWv/embed.js"></script></div>
+  <div id="chart-wIUgz"><script defer src="https://datawrapper.dwcdn.net/wIUgz/embed.js"></script></div>
+  <div id="chart-ledAf"><script defer src="https://datawrapper.dwcdn.net/ledAf/embed.js"></script></div>
+  <div id="chart-GsJqH"><script defer src="https://datawrapper.dwcdn.net/GsJqH/embed.js"></script></div>
+  <div id="chart-f1Z2f"><script defer src="https://datawrapper.dwcdn.net/f1Z2f/embed.js"></script></div>
+  <div id="chart-6O1AW"><script defer src="https://datawrapper.dwcdn.net/6O1AW/embed.js"></script></div>
+  <div id="chart-MP4sz"><script defer src="https://datawrapper.dwcdn.net/MP4sz/embed.js"></script></div>
+  <div id="chart-dNDlM"><script defer src="https://datawrapper.dwcdn.net/dNDlM/embed.js"></script></div>
+  <div id="chart-AFXR4"><script defer src="https://datawrapper.dwcdn.net/AFXR4/embed.js"></script></div>
+  <div id="chart-68VXG"><script defer src="https://datawrapper.dwcdn.net/68VXG/embed.js"></script></div>
+  <div id="chart-jWpoD"><script defer src="https://datawrapper.dwcdn.net/jWpoD/embed.js"></script></div>
+  <div id="chart-Pz191"><script defer src="https://datawrapper.dwcdn.net/Pz191/embed.js"></script></div>
+  <div id="chart-ylWlJ"><script defer src="https://datawrapper.dwcdn.net/ylWlJ/embed.js"></script></div>
+  <div id="chart-7ojrq"><script defer src="https://datawrapper.dwcdn.net/7ojrq/embed.js"></script></div>
+  <div id="chart-3mEN0"><script defer src="https://datawrapper.dwcdn.net/3mEN0/embed.js"></script></div>
+  <div id="chart-eVx2f"><script defer src="https://datawrapper.dwcdn.net/eVx2f/embed.js"></script></div>
+  <div id="chart-qK2gN"><script defer src="https://datawrapper.dwcdn.net/qK2gN/embed.js"></script></div>
+  <div id="chart-5x5YH"><script defer src="https://datawrapper.dwcdn.net/5x5YH/embed.js"></script></div>
+  <div id="chart-eDTxT"><script defer src="https://datawrapper.dwcdn.net/eDTxT/embed.js"></script></div>
+  <div id="chart-lANRJ"><script defer src="https://datawrapper.dwcdn.net/lANRJ/embed.js"></script></div>
+  <div id="chart-UIbwM"><script defer src="https://datawrapper.dwcdn.net/UIbwM/embed.js"></script></div>
+  <div id="chart-R6BYp"><script defer src="https://datawrapper.dwcdn.net/R6BYp/embed.js"></script></div>
+  <div id="chart-W9tKw"><script defer src="https://datawrapper.dwcdn.net/W9tKw/embed.js"></script></div>
+  <div id="chart-mD3Vm"><script defer src="https://datawrapper.dwcdn.net/mD3Vm/embed.js"></script></div>
+  <div id="chart-vQS9I"><script defer src="https://datawrapper.dwcdn.net/vQS9I/embed.js"></script></div>
+  <div id="chart-j68bN"><script defer src="https://datawrapper.dwcdn.net/j68bN/embed.js"></script></div>
+  <div id="chart-4W3VP"><script defer src="https://datawrapper.dwcdn.net/4W3VP/embed.js"></script></div>
+  <div id="chart-ii2fI"><script defer src="https://datawrapper.dwcdn.net/ii2fI/embed.js"></script></div>
+  <div id="chart-4OGtO"><script defer src="https://datawrapper.dwcdn.net/4OGtO/embed.js"></script></div>
+  <div id="chart-EuplN"><script defer src="https://datawrapper.dwcdn.net/EuplN/embed.js"></script></div>
+  <div id="chart-GrsVF"><script defer src="https://datawrapper.dwcdn.net/GrsVF/embed.js"></script></div>
+  <div id="chart-0sqIZ"><script defer src="https://datawrapper.dwcdn.net/0sqIZ/embed.js"></script></div>
+  <div id="chart-QfaIW"><script defer src="https://datawrapper.dwcdn.net/QfaIW/embed.js"></script></div>
+  <div id="chart-ShKAx"><script defer src="https://datawrapper.dwcdn.net/ShKAx/embed.js"></script></div>
+  <div id="chart-kubKY"><script defer src="https://datawrapper.dwcdn.net/kubKY/embed.js"></script></div>
+  <div id="chart-6Szpi"><script defer src="https://datawrapper.dwcdn.net/6Szpi/embed.js"></script></div>
+  <div id="chart-92jka"><script defer src="https://datawrapper.dwcdn.net/92jka/embed.js"></script></div>
+  <div id="chart-rvLS2"><script defer src="https://datawrapper.dwcdn.net/rvLS2/embed.js"></script></div>
+  <div id="chart-g6ysX"><script defer src="https://datawrapper.dwcdn.net/g6ysX/embed.js"></script></div>
+  <div id="chart-4WVjx"><script defer src="https://datawrapper.dwcdn.net/4WVjx/embed.js"></script></div>
+  <div id="chart-oSZzt"><script defer src="https://datawrapper.dwcdn.net/oSZzt/embed.js"></script></div>
+  <div id="chart-c8J9b"><script defer src="https://datawrapper.dwcdn.net/c8J9b/embed.js"></script></div>
+  <div id="chart-VY0GE"><script defer src="https://datawrapper.dwcdn.net/VY0GE/embed.js"></script></div>
+  <div id="chart-OyBYl"><script defer src="https://datawrapper.dwcdn.net/OyBYl/embed.js"></script></div>
+  <div id="chart-azj6G"><script defer src="https://datawrapper.dwcdn.net/azj6G/embed.js"></script></div>
+  <div id="chart-4vaVT"><script defer src="https://datawrapper.dwcdn.net/4vaVT/embed.js"></script></div>
+  <div id="chart-NZFOo"><script defer src="https://datawrapper.dwcdn.net/NZFOo/embed.js"></script></div>
+</div>
+
+<script>
+const select = document.getElementById('department-select');
+select.addEventListener('change', function() {
+  const selected = this.value;
+  const charts = document.querySelectorAll('#chart-container > div');
+  charts.forEach(div => div.style.display = 'none'); // hide all charts
+  if (selected) {
+    const chartDiv = document.getElementById('chart-' + selected);
+    if(chartDiv) chartDiv.style.display = 'block';
+  } else {
+    // show default "all departments" chart
+    document.getElementById('chart-Ldc1r').style.display = 'block';
+  }
+});
+</script>
+
+</body>
+</html>
