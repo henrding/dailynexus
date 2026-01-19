@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body { font-family: Roboto, sans-serif; padding: 20px; text-align: center; }
+  #chart-container > div { display: none; margin-top: 20px; position: relative; }
+  .nav-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .nav-buttons button {
+    font-size: 18px;
+    padding: 5px 12px;
+    margin: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div id="chart-container">
+  <div id="chart-0" style="display:block;">
+    <div class="nav-buttons">
+      <button onclick="prevChart()">&#10094;</button>
+      <button onclick="nextChart()">&#10095;</button>
+    </div>
+    <div style="min-height:502px" id="datawrapper-vis-OuUo8">
+      <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/OuUo8/embed.js" charset="utf-8" data-target="#datawrapper-vis-OuUo8"></script>
+      <noscript><img src="https://datawrapper.dwcdn.net/OuUo8/full.png" alt="Lecture duration by department for Winter 2026 (Stacked Bars)" /></noscript>
+    </div>
+  </div>
+  
+  <div id="chart-1">
+    <div class="nav-buttons">
+      <button onclick="prevChart()">&#10094;</button>
+      <button onclick="nextChart()">&#10095;</button>
+    </div>
+    <div style="min-height:526px" id="datawrapper-vis-WDwVg">
+      <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/WDwVg/embed.js" charset="utf-8" data-target="#datawrapper-vis-WDwVg"></script>
+      <noscript><img src="https://datawrapper.dwcdn.net/WDwVg/full.png" alt="Lecture duration by department for Winter 2026 (Stacked Bars)" /></noscript>
+    </div>
+  </div>
+  
+  <div id="chart-2">
+    <div class="nav-buttons">
+      <button onclick="prevChart()">&#10094;</button>
+      <button onclick="nextChart()">&#10095;</button>
+    </div>
+    <div style="min-height:502px" id="datawrapper-vis-gD2hD">
+      <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/gD2hD/embed.js" charset="utf-8" data-target="#datawrapper-vis-gD2hD"></script>
+      <noscript><img src="https://datawrapper.dwcdn.net/gD2hD/full.png" alt="Lecture duration by department for Winter 2026 (Stacked Bars)" /></noscript>
+    </div>
+  </div>
+  
+  <div id="chart-3">
+    <div class="nav-buttons">
+      <button onclick="prevChart()">&#10094;</button>
+      <button onclick="nextChart()">&#10095;</button>
+    </div>
+    <div style="min-height:502px" id="datawrapper-vis-NpUcb">
+      <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/NpUcb/embed.js" charset="utf-8" data-target="#datawrapper-vis-NpUcb"></script>
+      <noscript><img src="https://datawrapper.dwcdn.net/NpUcb/full.png" alt="Lecture duration by department for Winter 2026 (Stacked Bars)" /></noscript>
+    </div>
+  </div>
+</div>
+
+<script>
+const charts = document.querySelectorAll('#chart-container > div');
+let current = 0;
+
+function showChart(index) {
+  charts.forEach(div => div.style.display = 'none');
+  charts[index].style.display = 'block';
+  current = index;
+}
+
+function nextChart() {
+  showChart((current + 1) % charts.length);
+}
+
+function prevChart() {
+  showChart((current - 1 + charts.length) % charts.length);
+}
+</script>
+
+</body>
+</html>
