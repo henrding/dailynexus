@@ -3,15 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Undergraduate lecture times by subject area for Winter 2026</title>
+<title>Undergraduate lecture times by subject area</title>
 <style>
   body { font-family: Roboto, sans-serif; padding: 20px; }
   #chart-container > div { display: none; margin-top: 20px; }
+  .subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
 </style>
 </head>
 <body>
 
-<h1>Undergraduate lecture times by subject area for Winter 2026</h1>
+<h1>Undergraduate lecture times by subject area</h1>
+<p class="subtitle">Interactive chart showing the distribution of undergraduate lecture times for Winter 2026. Each subject area has a dropdown, which shows the number of classes held at each time during the week. The earliest possible start time is 6:30 a.m., while the latest possible start time is 7:00 p.m.</p>
 
 <label for="department-select">Select Subject Area:</label>
 <select id="department-select">
